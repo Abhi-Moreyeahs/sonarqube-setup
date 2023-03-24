@@ -16,7 +16,7 @@ jobs:
         run: npm install -g snyk
       - name: Snyk scanning process
         run: snyk auth ce1d4d14-9e9b-4caa-91dc-b904b253891e
-      - name: npm installation
+      - name: npm Installation
         run: npm install --strict-out-of-sync=false
       - name: Snyk testing 
         run: snyk test --strict-out-of-sync=false
